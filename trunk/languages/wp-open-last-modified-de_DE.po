@@ -1,0 +1,135 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wp-open-last-modified\n"
+"POT-Creation-Date: 2016-09-26 21:34+0200\n"
+"PO-Revision-Date: 2016-09-26 21:34+0200\n"
+"Last-Translator: Dogan Ucar <dogan@dogan-ucar.de>\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.9\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: open_last_modified.php:98 open_last_modified.php:112
+msgid "WP Last Modified Settings"
+msgstr "WP Last Modified Einstellungen"
+
+#: open_last_modified.php:117
+msgid ""
+"Define the settings by overriding the defaults with your own preferences"
+msgstr " Du kannst hier die Default-Einstellungen überschreiben"
+
+#: open_last_modified.php:124
+msgid "settings saved"
+msgstr "Einstellungen gespeichert"
+
+#: open_last_modified.php:132
+msgid "Error occured. Please enter a message"
+msgstr "Fehler. Bitte gebe eine Nachricht ein"
+
+#: open_last_modified.php:143
+msgid ""
+"Just use the *timestamp* or *last_modified_timestamp* shortcuts for "
+"inserting the modification date/time, *publication_timestamp* for the "
+"publication date/time and *revision_count* for the number of revisions. "
+"There are also options for GMT timezones (*last_modified_timestamp_gmt* and "
+"*publication_timestamp_gmt*)."
+msgstr ""
+"Benutzte einfach den *timestamp* oder *last_modified_timestamp* Shortcut für "
+"das letzte Änderungsdatum, *publication_timestamp* für das "
+"Veröffentlichungsdatum und *revision_count* für die aktuelle Revision. Um "
+"die Datumsangaben in der GMT Zeitzone zu erhalten kannst du "
+"*last_modified_timestamp_gmt* und *publication_timestamp_gmt* verwenden."
+
+#: open_last_modified.php:146
+msgid "If you don't need one of the values, just remove them from your text!"
+msgstr ""
+"Falls du eine der Variablen nicht brauchst, kannst du sie einfach aus dem "
+"Text entfernen!"
+
+#: open_last_modified.php:150
+msgid ""
+"Notice: you can configure the date format via the shortcut attribute "
+"'format'."
+msgstr ""
+"Hinweis: Du kannst ein Datumsformat eingeben indem du das Attribut ‘format’ "
+"setzt."
+
+#: open_last_modified.php:154
+msgid ""
+"Notice: you should use the *last_modified_timestamp* instead of *timestamp* "
+"because *timestamp* will be removed in a future release."
+msgstr ""
+"Hinweis: benutzte *last_modified_timestamp* anstelle von *timestamp*, da "
+"*timestamp* in zukünftigen Releases entfernt wird."
+
+#: open_last_modified.php:158
+msgid "Sample usage: [last_modified_date format=\"Y-m-d H:i:s\"]"
+msgstr "Beispiel: [last_modified_date format=\"Y-m-d H:i:s\"]"
+
+#: open_last_modified.php:177
+msgid "Save Changes"
+msgstr "Änderungen übernehmen"
+
+#~ msgid ""
+#~ "Just use the *timestamp* or *last_modified_timestamp* shortcuts for "
+#~ "inserting the modification date/time, *publication_timestamp* for the "
+#~ "publication date/time and *revision_count* for the number of revisions. "
+#~ "There are also options for GMT timezones (last_modified_timestamp_gmt and "
+#~ "publication_timestamp_gmt)."
+#~ msgstr ""
+#~ "Benutzte einfach den *timestamp* oder *last_modified_timestamp* Shortcut "
+#~ "für das letzte Änderungsdatum, *publication_timestamp* für das "
+#~ "Veröffentlichungsdatum und *revision_count* für die aktuelle Revision. Um "
+#~ "die Datumsangaben in der GMT Zeitzone zu erhalten kannst du "
+#~ "*last_modified_timestamp_gmt* und *publication_timestamp_gmt* verwenden."
+
+#~ msgid ""
+#~ "Just use the *timestamp* or *last_modified_timestamp* shortcuts for "
+#~ "inserting the modification date/time, *publication_timestamp* for the "
+#~ "publication date/time and *revision_count* for the number of revisions."
+#~ msgstr ""
+#~ "Benutzte einfach den *timestamp* oder *last_modified_timestamp* Shortcut "
+#~ "für das letzte Änderungsdatum, *publication_timestamp* für das "
+#~ "Veröffentlichungsdatum und *revision_count* für die aktuelle Revision."
+
+#~ msgid "WP Open Last Modified Settings"
+#~ msgstr "WP Open Last Modified Einstellungen"
+
+#~ msgid ""
+#~ "Define the settings by overriding the defaults with your own\n"
+#~ "\t\t\tpreferences"
+#~ msgstr "Du kannst hier die Default-Einstellungen überschreiben"
+
+#~ msgid ""
+#~ "Just use the <strong>*timestamp*</strong> or "
+#~ "<strong>*last_modified_timestamp*</strong>\n"
+#~ "\tshortcuts for inserting the modification date/time, "
+#~ "<strong>*publication_timestamp*</strong>\n"
+#~ "\tfor the publication date/time and <strong>*revision_count*</strong> "
+#~ "for\n"
+#~ "\tthe number of revisions."
+#~ msgstr ""
+#~ "Benutzte einfach den <strong>*timestamp*</strong> oder "
+#~ "<strong>*last_modified_timestamp*</strong>\n"
+#~ " Shortcut für das letzte Änderungsdatum, <strong>*publication_timestamp*</"
+#~ "strong> für das Veröffentlichungsdatum und <strong>*revision_count*</"
+#~ "strong> für die aktuelle Revision."
+
+#~ msgid ""
+#~ "Notice: you should use the <strong>*last_modified_timestamp*</strong> "
+#~ "instead of <strong>*timestamp*</strong> because <strong>*timestamp*</"
+#~ "strong> will be removed in a future release.'."
+#~ msgstr ""
+#~ "Hinweise: benutze <strong>*last_modified_timestamp*</strong> anstelle "
+#~ "<strong>*timestamp*</strong>. <strong>*timestamp*</strong>wird in "
+#~ "späteren Releases entfernt."
+
+#~ msgid "WordPress is the best!"
+#~ msgstr "WordPress ist das beste"
