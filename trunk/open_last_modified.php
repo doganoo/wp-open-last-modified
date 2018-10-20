@@ -3,7 +3,7 @@
  * Plugin Name: WP Last Modified
  * Plugin URI: www.dogan-ucar.de/wp-open-last-modified
  * Description: WP Last Modified adds the ‚last_modified_date‘ shortcut to your WordPress installation. This shortcut shows the last timestamp of your post/page. Simply use the „format“ attribute for custom date formats (it uses PHP’s date() function). The "description" attribute enables a brief description which changes has been made with the last modification. This plugin shows also the actual revision of your post/page. You can customize the text which will be shown under each post/page under settings -> WP Last Modified Settings.
- * Version: 1.4.0
+ * Version: 1.4.1
  * Author: Dogan Ucar
  * Author URI: www.dogan-ucar.de
  * License: GNU General Public License v3.0
@@ -90,7 +90,7 @@ function addTimestamp( $atts ) {
 	$ids   = $option->read( "wpolm_page_ids" );
 	$text  = $option->read( 'wpolm_text' );
 	$array = json_decode( $ids );
-	if ( in_array( $post->ID, $array ) ) {
+	if ( is_array( $array ) || in_array( $post->ID, $array ) ) {
 		return "";
 	}
 
