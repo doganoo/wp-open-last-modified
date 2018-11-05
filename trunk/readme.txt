@@ -38,10 +38,10 @@ Features:
 2. shows the plugin in action
 
 == Changelog ==
-= 1.4.3 =
+= 1.4.5 =
 * bugfix
 
-= 1.4.3 =
+= 1.4.4 =
 * minor change - in order to prevent warnings and errors
 
 = 1.4.3 =
