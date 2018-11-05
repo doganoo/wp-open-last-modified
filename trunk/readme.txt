@@ -38,6 +38,9 @@ Features:
 2. shows the plugin in action
 
 == Changelog ==
+= 1.4.3 =
+* bug fix
+
 = 1.4.2 =
 * bug fix
 
