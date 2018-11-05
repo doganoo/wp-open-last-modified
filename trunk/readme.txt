@@ -39,6 +39,9 @@ Features:
 
 == Changelog ==
 = 1.4.3 =
+* minor change - in order to prevent warnings and errors
+
+= 1.4.3 =
 * bug fix
 
 = 1.4.2 =
