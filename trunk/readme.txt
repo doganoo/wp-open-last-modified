@@ -2,10 +2,10 @@
 Tags: last modified, wordpress, post, page, timestamp, revision, WordPress, WP, version history, history, version, publication timestamp, publication date
 Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z8CV4GQF83XU4
 Requires at least: 2.8.0
-Tested up to: 4.9
+Tested up to: 5.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
-Stable tag: 1.4.0
+Stable tag: 1.4.6
 
 This plugins adds the last modified date, current revision and the publication date of your post/page.
 Simply use the shortcode [last_modified_date]
@@ -38,6 +38,9 @@ Features:
 2. shows the plugin in action
 
 == Changelog ==
+= 1.4.6 =
+* WP 5 tests and minor fixes
+
 = 1.4.5 =
 * bugfix
 

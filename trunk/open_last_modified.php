@@ -3,7 +3,7 @@
  * Plugin Name: WP Last Modified
  * Plugin URI: www.dogan-ucar.de/wp-open-last-modified
  * Description: WP Last Modified adds the ‚last_modified_date‘ shortcut to your WordPress installation. This shortcut shows the last timestamp of your post/page. Simply use the „format“ attribute for custom date formats (it uses PHP’s date() function). The "description" attribute enables a brief description which changes has been made with the last modification. This plugin shows also the actual revision of your post/page. You can customize the text which will be shown under each post/page under settings -> WP Last Modified Settings.
- * Version: 1.4.5
+ * Version: 1.4.6
  * Author: Dogan Ucar
  * Author URI: www.dogan-ucar.de
  * License: GNU General Public License v3.0
@@ -57,6 +57,7 @@ if (isset ($_POST ['update_wpolm_settings_name']) && wp_verify_nonce($_POST ['up
     }
     if (isset ($_POST ['update_wpolm_settings_name']) && wp_verify_nonce($_POST ['update_wpolm_settings_name'], 'update_wpolm_settings_action')) {
         $pageIds = $_POST["exclude-ids"];
+        $notEmpty = trim($pageIds) !== "";
         $pageIds = sanitize_text_field($pageIds);
         $pageIds = str_replace(" ", "", $pageIds);
         $pageIds = explode(",", $pageIds);
@@ -71,7 +72,7 @@ if (isset ($_POST ['update_wpolm_settings_name']) && wp_verify_nonce($_POST ['up
             $idUpdated = 1;
             $option->delete("wpolm_page_ids");
             $option->update("wpolm_page_ids", json_encode($pageIds));
-        } else {
+        } else if (true === $notEmpty) {
             $idUpdated = 2;
         }
     }
@@ -96,10 +97,10 @@ function addTimestamp($atts) {
         return "";
     }
 
-    $a = shortcode_atts(array(
+    $a = shortcode_atts([
         'format' => 'm/d/y H:i:s',
         'description' => '',
-    ), $atts);
+    ], $atts);
     $format = $a ['format'];
     $description = $a ['description'];
 
@@ -131,7 +132,12 @@ function addTimestamp($atts) {
 
     $text = strip_tags($text);
 
-    return $text;
+    $legacy = '
+    <!-- WP Last Modified by Dogan Ucar (https://www.dogan-ucar.de). -->
+    <!-- This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;-->
+    <!-- 2016 - ' . date("Y") . ' Dogan Ucar. -->';
+
+    return $legacy . $text;
 }
 
 /**
@@ -269,16 +275,16 @@ function add_wpolm_settings_page() {
     echo "<br>";
 
     echo '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- wordpress-wpolm2 -->
-			<ins class="adsbygoogle"
-			     style="display:block"
-			     data-ad-client="ca-pub-4632643185412075"
-			     data-ad-slot="7055818315"
-			     data-ad-format="auto"
-			     data-full-width-responsive="true"></ins>
-			<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		  </script>';
+<!-- wordpress-wpolm2 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4632643185412075"
+     data-ad-slot="7055818315"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>';
 
     //excluding pages
     echo "<p>";
